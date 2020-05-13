@@ -1,8 +1,6 @@
 import {
   IonContent,
-  IonHeader,
   IonPage,
-  IonToolbar,
   IonInput,
   IonItem,
   IonList,
@@ -40,7 +38,7 @@ const Login: React.FC = () => {
                 show-hide-input
               ></IonInput>
             </IonItem>
-            <IonButton size="large" expand="full">
+            <IonButton className="btn" size="large" expand="full">
               Login
             </IonButton>
           </IonList>
@@ -50,7 +48,7 @@ const Login: React.FC = () => {
             </a>
             <p>
               Don’t have an Account{" "}
-              <a className="highlight" href="#">
+              <a href="/signup" className="highlight">
                 sign Up
               </a>
             </p>
