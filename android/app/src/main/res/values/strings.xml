@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">clean</string>
+    <string name="title_activity_main">clean</string>
+    <string name="package_name">com.clean.app</string>
+    <string name="custom_url_scheme">com.clean.app</string>
+</resources>

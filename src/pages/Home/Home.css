@@ -1,0 +1,20 @@
+.flex {
+  width: 100%;
+  height: 100%;
+  background: #1368b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex img {
+  max-width: 100%;
+  display: block;
+}
+
+.flex h1 {
+  font-size: 60px;
+  color: #fff;
+  font-family: sans-serif;
+  margin-top: 65px;
+}
