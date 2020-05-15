@@ -6,13 +6,23 @@ import {
   IonList,
   IonButton,
 } from "@ionic/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import ExploreContainer from "../../components/ExploreContainer";
 import "./Login.css";
 import logo from "../../image/logo.png";
+import { Link } from "react-router-dom";
 
 const Login: React.FC = () => {
-  const [text, setText] = useState<string>();
+  const [user, setText] = useState("");
+  const [password, setPassword] = useState("");
+
+  function loginUser() {
+    if (user === "admin" && password === "admin") {
+      console.log("Login susscess: ", user, password);
+    } else {
+      console.log("Error email or pass");
+    }
+  }
 
   return (
     <IonPage>
@@ -26,9 +36,9 @@ const Login: React.FC = () => {
           <IonList className="mb4">
             <IonItem className="mb6">
               <IonInput
-                value={text}
+                type="email"
                 placeholder="Please Enter Your Email"
-                onIonChange={(e) => setText(e.detail.value!)}
+                onIonChange={(e: any) => setText(e.target.value)}
               ></IonInput>
             </IonItem>
             <IonItem className="mb10">
@@ -36,21 +46,28 @@ const Login: React.FC = () => {
                 type="password"
                 placeholder="Please Enter Your Password"
                 show-hide-input
+                onIonChange={(e: any) => setPassword(e.target.value)}
               ></IonInput>
             </IonItem>
-            <IonButton className="btn" size="large" expand="full">
+            <IonButton
+              onClick={loginUser}
+              className="btn"
+              size="large"
+              expand="full"
+              routerLink="/home"
+            >
               Login
             </IonButton>
           </IonList>
           <div className="forgot">
-            <a href="#" className="mb5">
+            <Link to="" className="mb5">
               Forgot Password?
-            </a>
+            </Link>
             <p>
               Don’t have an Account{" "}
-              <a href="/signup" className="highlight">
+              <Link to="/signup" className="highlight">
                 sign Up
-              </a>
+              </Link>
             </p>
           </div>
         </div>
