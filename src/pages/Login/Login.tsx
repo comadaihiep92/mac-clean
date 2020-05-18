@@ -6,7 +6,7 @@ import {
   IonList,
   IonButton,
 } from "@ionic/react";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import ExploreContainer from "../../components/ExploreContainer";
 import "./Login.css";
 import logo from "../../image/logo.png";
@@ -26,22 +26,22 @@ const Login: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent>
-        <div className="container">
+      <IonContent className="container">
+        <div className="list-custom">
           <div className="header">
             <img src={logo} alt="" />
             <h1>Hello there!</h1>
             <p>Proceed with your Login</p>
           </div>
           <IonList className="mb4">
-            <IonItem className="mb6">
+            <IonItem className="input-custom">
               <IonInput
                 type="email"
                 placeholder="Please Enter Your Email"
                 onIonChange={(e: any) => setText(e.target.value)}
               ></IonInput>
             </IonItem>
-            <IonItem className="mb10">
+            <IonItem className="input-custom">
               <IonInput
                 type="password"
                 placeholder="Please Enter Your Password"

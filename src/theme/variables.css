@@ -6,6 +6,7 @@ http://ionicframework.com/docs/theming/ */
   font-weight: 200;
   font-style: normal;
 }
+
 :root,
 :root[mode="ios"],
 :root[mode="md"] {
@@ -13,6 +14,7 @@ http://ionicframework.com/docs/theming/ */
   font-family: "Champagne & Limousines Bold", sans-serif !important;
 }
 /** Ionic CSS Variables **/
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -21,7 +23,11 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
   --ion-color-primary-tint: #4c8dff;
-  --ion-color-blue: #1b6ab5;
+
+  --ion-color-blue: #1c6bb8;
+  --ion-color-gray: #e7f0f7;
+  --ion-color-gray2: #aaaaaa;
+  --ion-color-button: #1b6ab5;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -238,4 +244,41 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-tab-bar-background: #1f1f1f;
   }
+}
+.ion-color-blue {
+  --ion-color-base: var(--ion-color-blue);
+}
+.ion-color-gray {
+  --ion-color-base: var(--ion-color-gray);
+}
+.ion-color-gray2 {
+  --ion-color-base: var(--ion-color-gray2);
+}
+.ion-color-button {
+  --ion-color-base: var(--ion-color-button);
+}
+
+.imgAvata {
+  max-width: 56px;
+  border: 2px solid #1c6bb8;
+  padding: 3px;
+  border-radius: 50%;
+}
+.imgArrow {
+  max-width: 14px;
+}
+.listTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.email {
+  color: #aaaaaa;
+}
+.imgMenu {
+  width: 30px;
+  height: 30px;
+}
+.textMenu {
+  margin-left: 40px;
 }

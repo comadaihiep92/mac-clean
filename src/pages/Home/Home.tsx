@@ -3,22 +3,17 @@ import { Link } from "react-router-dom";
 import {
   IonContent,
   IonPage,
-  IonInput,
-  IonItem,
-  IonList,
-  IonButton,
-  IonMenu,
   IonHeader,
   IonToolbar,
   IonTitle,
   IonButtons,
   IonMenuButton,
-  IonIcon,
   IonImg,
   IonGrid,
   IonRow,
   IonCol,
 } from "@ionic/react";
+
 // import ExploreContainer from "../../components/ExploreContainer";
 import "./Home.css";
 import iconmenu from "../../image/icon-menu.png";
@@ -29,12 +24,13 @@ import iconfumi from "../../image/icon-fumi.png";
 import iconindu from "../../image/icon-indu.png";
 import iconoffice from "../../image/icon-office.png";
 import iconresi from "../../image/icon-resi.png";
+import iconadd from "../../image/icon-add.png";
 
 const Home: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage className="container menu-animated">
       <IonHeader className="ion-no-border bg">
-        <IonToolbar className="bg">
+        <IonToolbar color="gray">
           <IonButtons slot="start">
             <IonMenuButton className="shadow" auto-hide="false">
               <IonImg src={iconmenu} />
@@ -77,9 +73,12 @@ const Home: React.FC = () => {
               <p>Event</p>
             </IonCol>
           </IonRow>
+          <Link to="/newservice" className="highlight">
+            <IonImg className="img-width" src={iconadd} />
+          </Link>
         </IonGrid>
-
-        <IonIcon name="add-outline"></IonIcon>
+        {/* <IonIcon slot="start" icon={iconmenu} /> */}
+        {/* <IonIcon ios="ios-add" md="md-add"></IonIcon> */}
       </IonContent>
     </IonPage>
   );
