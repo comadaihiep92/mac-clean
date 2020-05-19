@@ -43,9 +43,10 @@ const NewService: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonList className="addService__list">
-          <IonItem className="addService__item" id="rounded">
+          <IonItem className="addService__item" lines="none" id="rounded">
             <IonLabel>Service Name</IonLabel>
             <IonSelect
+              className="ion-padding-end"
               multiple={false}
               value={pets}
               onIonChange={(e) => setPets(e.detail.value)}
@@ -56,11 +57,11 @@ const NewService: React.FC = () => {
               <IonSelectOption value="service4">Service 4</IonSelectOption>
             </IonSelect>
           </IonItem>
-          <IonItem className="addService__item">
+          <IonItem className="addService__item" lines="none">
             <IonLabel position="floating">Billing Rate</IonLabel>
             <IonInput placeholder="Rate per hour"></IonInput>
           </IonItem>
-          <IonItem className="addService__item">
+          <IonItem className="addService__item" lines="none">
             <IonLabel position="floating">Description</IonLabel>
             <IonTextarea
               className="height"
@@ -68,7 +69,8 @@ const NewService: React.FC = () => {
               onIonChange={(e) => setText(e.detail.value!)}
             ></IonTextarea>
           </IonItem>
-          <IonButton color="button" className="addService__btn" expand="block">
+          {/* <IonButton color="button" className="addService__btn" expand="block"> */}
+          <IonButton className="btn" size="default" expand="block">
             Add Service
           </IonButton>
         </IonList>

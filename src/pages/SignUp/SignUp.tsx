@@ -24,35 +24,35 @@ const SignUp: React.FC = () => {
             <p>Proceed with your Sign Up</p>
           </div>
           <IonList className="mb4">
-            <IonItem className="input-custom">
+            <IonItem className="input-custom" lines="none">
               <IonInput
                 // value={text}
                 placeholder="Please Enter Your FullName"
                 // onIonChange={(e) => setText(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonItem className="input-custom">
+            <IonItem className="input-custom" lines="none">
               <IonInput
                 // value={text}
                 placeholder="Please Enter Your Email"
                 // onIonChange={(e) => setText(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonItem className="input-custom">
+            <IonItem className="input-custom" lines="none">
               <IonInput
                 type="password"
                 placeholder="Please Enter Your Password"
                 show-hide-input
               ></IonInput>
             </IonItem>
-            <IonItem className="input-custom">
+            <IonItem className="input-custom" lines="none">
               <IonInput
                 type="password"
                 placeholder="Please Confirm Your Password"
                 show-hide-input
               ></IonInput>
             </IonItem>
-            <IonButton className="btn" size="large" expand="full">
+            <IonButton className="btn" size="default" expand="block">
               Register
             </IonButton>
           </IonList>

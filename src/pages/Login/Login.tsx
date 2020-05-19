@@ -34,14 +34,14 @@ const Login: React.FC = () => {
             <p>Proceed with your Login</p>
           </div>
           <IonList className="mb4">
-            <IonItem className="input-custom">
+            <IonItem className="input-custom" lines="none">
               <IonInput
                 type="email"
                 placeholder="Please Enter Your Email"
                 onIonChange={(e: any) => setText(e.target.value)}
               ></IonInput>
             </IonItem>
-            <IonItem className="input-custom">
+            <IonItem className="input-custom" lines="none">
               <IonInput
                 type="password"
                 placeholder="Please Enter Your Password"
@@ -52,8 +52,8 @@ const Login: React.FC = () => {
             <IonButton
               onClick={loginUser}
               className="btn"
-              size="large"
-              expand="full"
+              size="default"
+              expand="block"
               routerLink="/home"
             >
               Login

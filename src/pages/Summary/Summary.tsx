@@ -1,24 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
   IonContent,
   IonPage,
-  IonInput,
-  IonItem,
-  IonList,
-  IonButton,
-  IonMenu,
   IonHeader,
   IonToolbar,
   IonTitle,
   IonButtons,
   IonMenuButton,
-  IonIcon,
   IonImg,
-  IonGrid,
-  IonRow,
-  IonCol,
-  IonSplitPane,
+  IonList,
 } from "@ionic/react";
 
 import "./Summary.css";
@@ -62,13 +53,13 @@ const Summary: React.FC = () => {
           <IonList className="summary__item">
             <IonImg className="summary__img" src={iconSche} />
             <p>
-              Schedule Service: : <span>15</span>
+              Schedule Service : <span>15</span>
             </p>
           </IonList>
           <IonList className="summary__item">
             <IonImg className="summary__img" src={iconCalcel} />
             <p>
-              Cancelled Service : : <span>160</span>
+              Cancelled Service : <span>160</span>
             </p>
           </IonList>
         </IonList>

@@ -7,11 +7,11 @@ import {
   IonHeader,
   IonContent,
   IonToolbar,
-  IonTitle,
   IonList,
   IonItem,
   IonImg,
   IonRouterLink,
+  IonText,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 // import { Link } from "react-router-dom";
@@ -21,6 +21,8 @@ import SignUp from "./pages/SignUp/SignUp";
 
 import NewService from "./pages/NewService/NewService";
 import Summary from "./pages/Summary/Summary";
+import ServiceRequest from "./pages/ServiceRequest/ServiceRequest";
+import RequestDetail from "./pages/RequestDetail/RequestDetail";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -59,8 +61,8 @@ const App: React.FC = () => (
           <IonList className="listTitle">
             <IonImg className="imgAvata" src={iconAvata} />
             <IonList className="titleMenu">
-              <IonTitle color="blue">Mira SK</IonTitle>
-              <p className="email">infodymira@gmail.com</p>
+              <IonText color="blue">Mira SK</IonText>
+              <IonText className="email">infodymira@gmail.com</IonText>
             </IonList>
             {/* <Link to="/newservice" className="highlight"> */}
             <IonRouterLink href="/profile">
@@ -85,13 +87,13 @@ const App: React.FC = () => (
               <p className="textMenu">Summary</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/home">
+          <IonRouterLink href="/servicerequest">
             <IonItem>
               <IonImg className="imgMenu" src={iconService} />
               <p className="textMenu">Service Requsets</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/home">
+          <IonRouterLink href="/requestdetail">
             <IonItem>
               <IonImg className="imgMenu" src={iconProfile} />
               <p className="textMenu">Profile</p>
@@ -121,6 +123,8 @@ const App: React.FC = () => (
       {/* <Route path="/menu" component={Menu} exact={true} /> */}
       <Route path="/newservice" component={NewService} exact={true} />
       <Route path="/summary" component={Summary} exact={true} />
+      <Route path="/servicerequest" component={ServiceRequest} exact={true} />
+      <Route path="/requestdetail" component={RequestDetail} exact={true} />
 
       {/* <IonSplitPane contentId="main">
         <Menu />

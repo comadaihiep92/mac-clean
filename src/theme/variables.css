@@ -276,9 +276,13 @@ http://ionicframework.com/docs/theming/ */
   color: #aaaaaa;
 }
 .imgMenu {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 .textMenu {
-  margin-left: 40px;
+  margin-left: 25px;
+}
+.titleMenu {
+  display: flex;
+  flex-direction: column;
 }

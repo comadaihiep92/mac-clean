@@ -21,7 +21,7 @@
 
 .itemHome {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px;
   max-width: 150px;
   display: flex;
   justify-content: center;
@@ -36,15 +36,16 @@
   margin-right: 20px;
 }
 .sizeImg {
-  max-height: 100px;
-  margin-bottom: 30px;
+  height: 80px;
+  width: 70%;
+  margin-bottom: 10px;
 }
 .item p {
-  font-size: 23px;
+  font-size: 18px;
   color: #5e5e5e;
 }
 .title {
-  font-size: 25px;
+  font-size: 17px;
   color: #8b8b8b;
 }
 
@@ -53,4 +54,7 @@
   height: 33px;
   margin-left: auto;
   margin-right: 10px;
+}
+.iconButton {
+  width: 30px;
 }

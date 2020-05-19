@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         <IonToolbar color="gray">
           <IonButtons slot="start">
             <IonMenuButton className="shadow" auto-hide="false">
-              <IonImg src={iconmenu} />
+              <IonImg className="iconButton" src={iconmenu} />
             </IonMenuButton>
           </IonButtons>
 
