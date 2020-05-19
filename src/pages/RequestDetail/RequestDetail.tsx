@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   IonContent,
   IonPage,
@@ -7,23 +6,15 @@ import {
   IonToolbar,
   IonTitle,
   IonButtons,
-  IonMenuButton,
   IonImg,
   IonList,
-  IonDatetime,
   IonText,
-  IonBackButton,
   IonRouterLink,
   IonButton,
 } from "@ionic/react";
 
 import "./RequestDetail.css";
-import iconmenu2 from "../../image/icon-menu-nobg.png";
 import banner2 from "../../image/banner2.jpg";
-import iconTotal from "../../image/icon-total.png";
-import iconRevenue from "../../image/icon-revenue.png";
-import iconSche from "../../image/icon-sche.png";
-import iconCalcel from "../../image/icon-cancel.png";
 import iconStar from "../../image/icon-star.png";
 import iconProfile from "../../image/avata.png";
 import iconAdress from "../../image/icon-address.png";

@@ -23,6 +23,8 @@ import NewService from "./pages/NewService/NewService";
 import Summary from "./pages/Summary/Summary";
 import ServiceRequest from "./pages/ServiceRequest/ServiceRequest";
 import RequestDetail from "./pages/RequestDetail/RequestDetail";
+import Profile from "./pages/Profile/Profile";
+import Earnings from "./pages/Earnings/Earnings";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -93,19 +95,19 @@ const App: React.FC = () => (
               <p className="textMenu">Service Requsets</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/requestdetail">
+          <IonRouterLink href="/profile">
             <IonItem>
               <IonImg className="imgMenu" src={iconProfile} />
               <p className="textMenu">Profile</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/home">
+          <IonRouterLink href="/earnings">
             <IonItem>
               <IonImg className="imgMenu" src={iconEarning} />
               <p className="textMenu">Earnings</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/home">
+          <IonRouterLink href="/login">
             <IonItem>
               <IonImg className="imgMenu" src={iconLogout} />
               <p className="textMenu">Logout</p>
@@ -125,6 +127,7 @@ const App: React.FC = () => (
       <Route path="/summary" component={Summary} exact={true} />
       <Route path="/servicerequest" component={ServiceRequest} exact={true} />
       <Route path="/requestdetail" component={RequestDetail} exact={true} />
+      <Route path="/earnings" component={Earnings} exact={true} />
 
       {/* <IonSplitPane contentId="main">
         <Menu />
