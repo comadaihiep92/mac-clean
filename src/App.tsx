@@ -127,6 +127,7 @@ const App: React.FC = () => (
       <Route path="/summary" component={Summary} exact={true} />
       <Route path="/servicerequest" component={ServiceRequest} exact={true} />
       <Route path="/requestdetail" component={RequestDetail} exact={true} />
+      <Route path="/profile" component={Profile} exact={true} />
       <Route path="/earnings" component={Earnings} exact={true} />
 
       {/* <IonSplitPane contentId="main">
