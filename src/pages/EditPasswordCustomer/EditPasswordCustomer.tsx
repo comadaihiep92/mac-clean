@@ -27,7 +27,7 @@ const EditPasswordCustomer: React.FC = () => {
         <IonToolbar color="blue">
           <IonList color="blue" className="addService__width">
             <IonButtons slot="end">
-              <Link to="/profile">
+              <Link to="/profilecustomer">
                 <IonImg src={iconclose} />
               </Link>
             </IonButtons>

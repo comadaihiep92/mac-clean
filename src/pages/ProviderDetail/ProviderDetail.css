@@ -3,7 +3,7 @@
   max-width: 30px;
   margin-left: 10px;
 }
-.detail {
+.service__item.detail {
   flex-direction: column;
   background: none;
   box-shadow: none;
@@ -34,7 +34,7 @@
   align-items: center;
   padding: 0 5px;
 }
-.smallStar {
+.service__icon.smallStar {
   margin: 0 2px;
 }
 .listAdress {

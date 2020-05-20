@@ -28,6 +28,7 @@ import Earnings from "./pages/Earnings/Earnings";
 import EditPasswordCustomer from "./pages/EditPasswordCustomer/EditPasswordCustomer";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import AvailableProviders from "./pages/AvailableProviders/AvailableProviders";
+import Help from "./pages/Help/Help";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -71,7 +72,7 @@ const App: React.FC = () => (
               <IonText className="email">infodymira@gmail.com</IonText>
             </IonList>
             {/* <Link to="/newservice" className="highlight"> */}
-            <IonRouterLink href="/profile">
+            <IonRouterLink href="/profilecustomer">
               <IonImg className="imgArrow" src={iconArrow} />
             </IonRouterLink>
 
@@ -99,7 +100,8 @@ const App: React.FC = () => (
               <p className="textMenu">Profile</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/payment">
+          {/* <IonRouterLink href="/payment"> */}
+          <IonRouterLink>
             <IonItem>
               <IonImg className="imgMenu" src={iconPayment} />
               <p className="textMenu">Payment</p>
@@ -139,6 +141,7 @@ const App: React.FC = () => (
         exact={true}
       />
       <Route path="/forgotpassword" component={ForgotPassword} exact={true} />
+      <Route path="/help" component={Help} exact={true} />
       <Route
         path="/availableproviders"
         component={AvailableProviders}
