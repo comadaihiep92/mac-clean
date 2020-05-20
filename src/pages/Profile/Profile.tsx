@@ -8,12 +8,10 @@ import {
   IonButtons,
   IonImg,
   IonList,
-  IonText,
   IonRouterLink,
   IonButton,
   IonFab,
   IonFabButton,
-  IonIcon,
   IonItem,
   IonLabel,
   IonInput,
@@ -24,7 +22,6 @@ import "./Profile.css";
 import banner2 from "../../image/banner2.jpg";
 import iconEdit from "../../image/icon-edit.png";
 import iconProfile from "../../image/avata.png";
-import iconAdress from "../../image/icon-address.png";
 import iconBack from "../../image/icon-arrow-back.png";
 
 const Profile: React.FC = () => {
@@ -54,33 +51,61 @@ const Profile: React.FC = () => {
               className="service__img imgAvata avataWhite noMarginProfile"
               src={iconProfile}
             />
-            <IonFabButton size="small" className="btnEdit">
-              <IonImg className="iconEdit" src={iconEdit} />
-            </IonFabButton>
+            <IonFab
+              vertical="top"
+              horizontal="end"
+              slot="fixed"
+              className="btnEdit"
+            >
+              <IonFabButton size="small" className="colorWhite">
+                <IonImg className="iconEdit" src={iconEdit} />
+              </IonFabButton>
+            </IonFab>
             <IonList className="profile__list">
               <IonItem className="addService__item" lines="none">
-                <IonLabel position="floating" className="labelProfile">
+                <IonLabel
+                  color="label"
+                  position="floating"
+                  className="labelProfile"
+                >
                   First Name
                 </IonLabel>
-                <IonInput className="inputProfile"></IonInput>
+                <IonInput
+                  color="input"
+                  className="inputProfile"
+                  placeholder="Dester"
+                ></IonInput>
               </IonItem>
               <IonItem className="addService__item" lines="none">
-                <IonLabel position="floating" className="labelProfile">
+                <IonLabel
+                  color="label"
+                  position="floating"
+                  className="labelProfile"
+                >
                   Last Name
                 </IonLabel>
-                <IonInput className="inputProfile"></IonInput>
+                <IonInput
+                  color="input"
+                  className="inputProfile"
+                  placeholder="Hamohao"
+                ></IonInput>
               </IonItem>
             </IonList>
           </IonList>
 
-          <IonButton className="btn" expand="block">
+          <IonButton className="btn" size="large" expand="block">
             Update
           </IonButton>
         </IonList>
       </IonContent>
       <IonFooter>
         <IonToolbar>
-          <IonButton href="/editpassword" className="btn" expand="block">
+          <IonButton
+            href="/editpassword"
+            size="large"
+            className="btn"
+            expand="block"
+          >
             Change Password
           </IonButton>
         </IonToolbar>

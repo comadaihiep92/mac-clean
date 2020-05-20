@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {
   IonContent,
   IonPage,
@@ -12,6 +12,8 @@ import {
   IonGrid,
   IonRow,
   IonCol,
+  IonFab,
+  IonFabButton,
 } from "@ionic/react";
 
 // import ExploreContainer from "../../components/ExploreContainer";
@@ -73,12 +75,12 @@ const Home: React.FC = () => {
               <p>Event</p>
             </IonCol>
           </IonRow>
-          <Link to="/newservice" className="highlight">
-            <IonImg className="img-width" src={iconadd} />
-          </Link>
+          <IonFab horizontal="end">
+            <IonFabButton color="blue" size="small" href="/newservice">
+              <IonImg className="img-width" src={iconadd} />
+            </IonFabButton>
+          </IonFab>
         </IonGrid>
-        {/* <IonIcon slot="start" icon={iconmenu} /> */}
-        {/* <IonIcon ios="ios-add" md="md-add"></IonIcon> */}
       </IonContent>
     </IonPage>
   );

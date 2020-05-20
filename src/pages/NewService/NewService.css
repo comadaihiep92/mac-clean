@@ -2,9 +2,9 @@
   color: #fff;
 }
 .addService__width {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
   background: #1c6bb8;
   display: flex;
   flex-direction: row-reverse;
@@ -12,7 +12,7 @@
 .addService__list,
 .list-custom {
   margin: 40px 0;
-  width: 300px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }

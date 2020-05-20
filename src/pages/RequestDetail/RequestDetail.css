@@ -1,6 +1,7 @@
 /* Request detail */
 .imgBack {
   max-width: 30px;
+  margin-left: 10px;
 }
 .detail {
   flex-direction: column;

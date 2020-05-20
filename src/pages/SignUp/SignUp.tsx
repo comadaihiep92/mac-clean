@@ -52,7 +52,7 @@ const SignUp: React.FC = () => {
                 show-hide-input
               ></IonInput>
             </IonItem>
-            <IonButton className="btn" size="default" expand="block">
+            <IonButton className="btn" size="large" expand="block">
               Register
             </IonButton>
           </IonList>

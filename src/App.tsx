@@ -25,6 +25,7 @@ import ServiceRequest from "./pages/ServiceRequest/ServiceRequest";
 import RequestDetail from "./pages/RequestDetail/RequestDetail";
 import Profile from "./pages/Profile/Profile";
 import Earnings from "./pages/Earnings/Earnings";
+import EditPassword from "./pages/EditPassword/EditPassword";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -129,6 +130,7 @@ const App: React.FC = () => (
       <Route path="/requestdetail" component={RequestDetail} exact={true} />
       <Route path="/profile" component={Profile} exact={true} />
       <Route path="/earnings" component={Earnings} exact={true} />
+      <Route path="/editpassword" component={EditPassword} exact={true} />
 
       {/* <IonSplitPane contentId="main">
         <Menu />

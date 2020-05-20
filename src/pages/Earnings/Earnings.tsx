@@ -16,15 +16,7 @@ import {
 import "./Earnings.css";
 import iconmenu2 from "../../image/icon-menu-nobg.png";
 import banner2 from "../../image/banner2.jpg";
-import iconTotal from "../../image/icon-total.png";
-import iconRevenue from "../../image/icon-revenue.png";
-import iconSche from "../../image/icon-sche.png";
-import iconCalcel from "../../image/icon-cancel.png";
-
-import iconStar from "../../image/icon-star.png";
 import iconProfile from "../../image/avata.png";
-import iconAdress from "../../image/icon-address.png";
-import iconBack from "../../image/icon-arrow-back.png";
 
 const Earnings: React.FC = () => {
   return (
@@ -43,47 +35,69 @@ const Earnings: React.FC = () => {
       <IonContent>
         <IonImg src={banner2} />
 
-        <IonList className="summary__list">
-          <IonList className="service__item detail">
-            <IonImg
-              className="service__img imgAvata avataWhite"
-              src={iconProfile}
-            />
-            <IonList className="service__info">
+        <IonList className="summary__list flexEarnings">
+          <IonImg
+            className="service__img imgAvata avataWhite flexAvataSmall"
+            src={iconProfile}
+          />
+          <IonList className="service__item detail relativeEarnings">
+            <IonList className="service__info width100Earnings">
               <IonList className="service__info-list detailColumn">
-                <IonText className="service__name request__name">
-                  Ayushkman Abhishek
+                <IonText className="service__name request__name earning__total">
+                  Total Earnings
                 </IonText>
-                <IonList className="listReview">
-                  <IonText className="service__rate">5.0</IonText>
-                  <IonList className="listRate">
-                    <IonImg
-                      className="service__icon smallStar"
-                      src={iconStar}
-                    />
-                    <IonImg
-                      className="service__icon smallStar"
-                      src={iconStar}
-                    />
-                    <IonImg
-                      className="service__icon smallStar"
-                      src={iconStar}
-                    />
-                    <IonImg
-                      className="service__icon smallStar"
-                      src={iconStar}
-                    />
-                    <IonImg
-                      className="service__icon smallStar"
-                      src={iconStar}
-                    />
+                <IonText className="service__name request__name earning__price">
+                  ₦ 200.00
+                </IonText>
+                <IonList className="listReview columnEarnings">
+                  <IonList className="earning__list earning__title">
+                    <IonText className="width1 displayNone">0</IonText>
+                    <IonText className="width3">Time</IonText>
+                    <IonText className="width3">Service</IonText>
+                    <IonText className="width3">Earnings</IonText>
                   </IonList>
-                  <IonText className="colorGray">(20 Reviews)</IonText>
+
+                  <IonList className="earning__list earning__text">
+                    <IonText className="width1">1</IonText>
+                    <IonText className="width3">22 Feb 2017</IonText>
+                    <IonText className="width3">Office Service</IonText>
+                    <IonText className="width3" color="blue">
+                      ₦ 200.00
+                    </IonText>
+                  </IonList>
+                  <IonList className="earning__list earning__text">
+                    <IonText className="width1">2</IonText>
+                    <IonText className="width3">22 Feb 2018</IonText>
+                    <IonText className="width3">Event Service</IonText>
+                    <IonText className="width3" color="blue">
+                      ₦ 200.00
+                    </IonText>
+                  </IonList>
+                  <IonList className="earning__list earning__text">
+                    <IonText className="width1">3</IonText>
+                    <IonText className="width3">22 Feb 2018</IonText>
+                    <IonText className="width3">Event Service</IonText>
+                    <IonText className="width3" color="blue">
+                      ₦ 200.00
+                    </IonText>
+                  </IonList>
+                  <IonList className="earning__list earning__text">
+                    <IonText className="width1">4</IonText>
+                    <IonText className="width3">22 Feb 2018</IonText>
+                    <IonText className="width3">Event Service</IonText>
+                    <IonText className="width3" color="blue">
+                      ₦ 200.00
+                    </IonText>
+                  </IonList>
+                  <IonList className="earning__list earning__text">
+                    <IonText className="width1">5</IonText>
+                    <IonText className="width3">22 Feb 2018</IonText>
+                    <IonText className="width3">Event Service</IonText>
+                    <IonText className="width3" color="blue">
+                      ₦ 200.00
+                    </IonText>
+                  </IonList>
                 </IonList>
-              </IonList>
-              <IonList className="listAdress">
-                <IonImg className="iconAdress" src={iconAdress} />
-                <IonText className="colorGray">Karachi, Pakistan</IonText>
               </IonList>
             </IonList>
           </IonList>

@@ -157,7 +157,7 @@ const RequestDetail: React.FC = () => {
               </IonList>
             </IonList>
           </IonList>
-          <IonButton className="btn" expand="block">
+          <IonButton size="large" className="btn" expand="block">
             Accept
           </IonButton>
         </IonList>

@@ -28,6 +28,8 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-gray: #e7f0f7;
   --ion-color-gray2: #aaaaaa;
   --ion-color-button: #1b6ab5;
+  --ion-color-label: #a7a7a7;
+  --ion-color-input: #606060;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -256,6 +258,12 @@ http://ionicframework.com/docs/theming/ */
 }
 .ion-color-button {
   --ion-color-base: var(--ion-color-button);
+}
+.ion-color-label {
+  --ion-color-base: var(--ion-color-label);
+}
+.ion-color-input {
+  --ion-color-base: var(--ion-color-input);
 }
 
 .imgAvata {

@@ -52,7 +52,7 @@ const Login: React.FC = () => {
             <IonButton
               onClick={loginUser}
               className="btn"
-              size="default"
+              size="large"
               expand="block"
               routerLink="/home"
             >
