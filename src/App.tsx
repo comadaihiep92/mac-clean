@@ -26,6 +26,7 @@ import RequestDetail from "./pages/RequestDetail/RequestDetail";
 import Profile from "./pages/Profile/Profile";
 import Earnings from "./pages/Earnings/Earnings";
 import EditPassword from "./pages/EditPassword/EditPassword";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -120,7 +121,7 @@ const App: React.FC = () => (
     <IonRouterOutlet id="content1"></IonRouterOutlet>
     <IonReactRouter>
       <Route path="/home" component={Home} exact={true} />
-      <Route exact path="/" render={() => <Redirect to="/Login" />} />
+      <Route exact path="/" render={() => <Redirect to="/login" />} />
       <Route path="/login" component={Login} exact={true} />
       <Route path="/signup" component={SignUp} exact={true} />
       {/* <Route path="/menu" component={Menu} exact={true} /> */}
@@ -131,6 +132,7 @@ const App: React.FC = () => (
       <Route path="/profile" component={Profile} exact={true} />
       <Route path="/earnings" component={Earnings} exact={true} />
       <Route path="/editpassword" component={EditPassword} exact={true} />
+      <Route path="/forgotpassword" component={ForgotPassword} exact={true} />
 
       {/* <IonSplitPane contentId="main">
         <Menu />

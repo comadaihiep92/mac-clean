@@ -7,16 +7,17 @@ import {
   IonToolbar,
   IonTitle,
   IonButtons,
-  IonMenuButton,
   IonImg,
   IonList,
   IonText,
+  IonRouterLink,
 } from "@ionic/react";
 
 import "./Earnings.css";
-import iconmenu2 from "../../image/icon-menu-nobg.png";
+// import iconmenu2 from "../../image/icon-menu-nobg.png";
 import banner2 from "../../image/banner2.jpg";
 import iconProfile from "../../image/avata.png";
+import iconBack from "../../image/icon-arrow-back.png";
 
 const Earnings: React.FC = () => {
   return (
@@ -24,9 +25,9 @@ const Earnings: React.FC = () => {
       <IonHeader className="ion-no-border bg">
         <IonToolbar color="blue">
           <IonButtons slot="start">
-            <IonMenuButton className="shadow" auto-hide="false">
-              <IonImg src={iconmenu2} />
-            </IonMenuButton>
+            <IonRouterLink href="/home" className="shadow" auto-hide="false">
+              <IonImg className="imgBack" src={iconBack} />
+            </IonRouterLink>
           </IonButtons>
 
           <IonTitle className="ion-text-center title-white">Earnings</IonTitle>

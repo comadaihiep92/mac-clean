@@ -60,7 +60,7 @@ const Login: React.FC = () => {
             </IonButton>
           </IonList>
           <div className="forgot">
-            <Link to="" className="mb5">
+            <Link to="/forgotpassword" className="mb5">
               Forgot Password?
             </Link>
             <p>

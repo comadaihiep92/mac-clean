@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   IonContent,
@@ -13,9 +13,6 @@ import {
   IonButtons,
   IonImg,
   IonLabel,
-  IonTextarea,
-  IonSelectOption,
-  IonSelect,
 } from "@ionic/react";
 // import ExploreContainer from "../../components/ExploreContainer";
 import "./EditPassword.css";
@@ -62,9 +59,8 @@ const EditPassword: React.FC = () => {
             <IonInput color="input" placeholder="A4cj6x86nc"></IonInput>
           </IonItem>
 
-          {/* <IonButton color="button" className="addService__btn" expand="block"> */}
           <IonButton className="btn" size="large" expand="block">
-            Add Service
+            Update
           </IonButton>
         </IonList>
       </IonContent>

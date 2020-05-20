@@ -30,11 +30,7 @@ const Profile: React.FC = () => {
       <IonHeader className="ion-no-border bg">
         <IonToolbar color="blue">
           <IonButtons slot="start">
-            <IonRouterLink
-              href="/servicerequest"
-              className="shadow"
-              auto-hide="false"
-            >
+            <IonRouterLink href="/home" className="shadow" auto-hide="false">
               <IonImg className="imgBack" src={iconBack} />
             </IonRouterLink>
           </IonButtons>
