@@ -18,19 +18,23 @@ import {
   IonFooter,
 } from "@ionic/react";
 
-import "./Profile.css";
+import "./ProfileCustomer.css";
 import banner2 from "../../image/banner2.jpg";
 import iconEdit from "../../image/icon-edit.png";
 import iconProfile from "../../image/avata.png";
 import iconBack from "../../image/icon-arrow-back.png";
 
-const Profile: React.FC = () => {
+const ProfileCustomer: React.FC = () => {
   return (
     <IonPage className="container">
       <IonHeader className="ion-no-border bg">
         <IonToolbar color="blue">
           <IonButtons slot="start">
-            <IonRouterLink href="/home" className="shadow" auto-hide="false">
+            <IonRouterLink
+              href="/homecustomer"
+              className="shadow"
+              auto-hide="false"
+            >
               <IonImg className="imgBack" src={iconBack} />
             </IonRouterLink>
           </IonButtons>
@@ -69,7 +73,7 @@ const Profile: React.FC = () => {
                 <IonInput
                   color="input"
                   className="inputProfile"
-                  placeholder="Dester"
+                  placeholder="Ayushkman"
                 ></IonInput>
               </IonItem>
               <IonItem className="addService__item" lines="none">
@@ -83,7 +87,22 @@ const Profile: React.FC = () => {
                 <IonInput
                   color="input"
                   className="inputProfile"
-                  placeholder="Hamohao"
+                  placeholder="Abhishek"
+                ></IonInput>
+              </IonItem>
+              <IonItem className="addService__item" lines="none">
+                <IonLabel
+                  color="label"
+                  position="floating"
+                  className="labelProfile"
+                >
+                  Phone Number
+                </IonLabel>
+                <IonInput
+                  type="tel"
+                  color="input"
+                  className="inputProfile"
+                  placeholder="012-453-7654"
                 ></IonInput>
               </IonItem>
             </IonList>
@@ -97,7 +116,7 @@ const Profile: React.FC = () => {
       <IonFooter>
         <IonToolbar>
           <IonButton
-            href="/editpassword"
+            href="/editpasswordcustomer"
             size="large"
             className="btn"
             expand="block"
@@ -110,4 +129,4 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
+export default ProfileCustomer;

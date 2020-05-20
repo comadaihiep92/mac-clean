@@ -17,7 +17,7 @@ import {
 } from "@ionic/react";
 
 // import ExploreContainer from "../../components/ExploreContainer";
-import "./Home.css";
+import "./HomeCustomer.css";
 import iconmenu from "../../image/icon-menu.png";
 import banner from "../../image/banner.jpg";
 import iconcons from "../../image/icon-cons.png";
@@ -28,7 +28,7 @@ import iconoffice from "../../image/icon-office.png";
 import iconresi from "../../image/icon-resi.png";
 import iconadd from "../../image/icon-add.png";
 
-const Home: React.FC = () => {
+const HomeCustomer: React.FC = () => {
   return (
     <IonPage className="container menu-animated">
       <IonHeader className="ion-no-border bg">
@@ -75,15 +75,10 @@ const Home: React.FC = () => {
               <p>Event</p>
             </IonCol>
           </IonRow>
-          <IonFab horizontal="end">
-            <IonFabButton color="blue" size="small" href="/newservice">
-              <IonImg className="img-width" src={iconadd} />
-            </IonFabButton>
-          </IonFab>
         </IonGrid>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default HomeCustomer;

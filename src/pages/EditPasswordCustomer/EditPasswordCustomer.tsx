@@ -15,10 +15,10 @@ import {
   IonLabel,
 } from "@ionic/react";
 // import ExploreContainer from "../../components/ExploreContainer";
-import "./EditPassword.css";
+import "./EditPasswordCustomer.css";
 import iconclose from "../../image/icon-close.png";
 
-const EditPassword: React.FC = () => {
+const EditPasswordCustomer: React.FC = () => {
   // const [pets, setPets] = useState<string[]>([]);
   // const [text, setText] = useState("");
   return (
@@ -68,4 +68,4 @@ const EditPassword: React.FC = () => {
   );
 };
 
-export default EditPassword;
+export default EditPasswordCustomer;

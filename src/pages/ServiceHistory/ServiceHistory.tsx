@@ -14,13 +14,13 @@ import {
   IonRouterLink,
 } from "@ionic/react";
 
-import "./ServiceRequest.css";
+import "./ServiceHistory.css";
 import iconmenu2 from "../../image/icon-menu-nobg.png";
 import banner2 from "../../image/banner2.jpg";
 import iconStar from "../../image/icon-star.png";
 import iconProfile from "../../image/avata.png";
 
-const ServiceRequest: React.FC = () => {
+const ServiceHistory: React.FC = () => {
   return (
     <IonPage className="input menu-animated">
       <IonHeader className="ion-no-border bg">
@@ -32,7 +32,7 @@ const ServiceRequest: React.FC = () => {
           </IonButtons>
 
           <IonTitle className="ion-text-center title-white">
-            Service Request
+            Service History
           </IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -40,28 +40,7 @@ const ServiceRequest: React.FC = () => {
         <IonImg src={banner2} />
 
         <IonList className="service__list">
-          <IonRouterLink href="/requestdetail">
-            <IonList className="service__item">
-              <IonImg className="service__img imgAvata " src={iconProfile} />
-              <IonList className="service__info">
-                <IonList className="service__info-list">
-                  <IonText className="service__name">John Terry</IonText>
-                  <IonImg className="service__icon" src={iconStar} />
-                  <IonText className="service__rate">5.0</IonText>
-                </IonList>
-                <IonList>
-                  <IonText className="service__date">
-                    Friday, 20-12-2018
-                  </IonText>
-                </IonList>
-                <IonList className="service__request request--new">
-                  New Request
-                </IonList>
-              </IonList>
-              <IonText className="service__price">₦ 300.00</IonText>
-            </IonList>
-          </IonRouterLink>
-          <IonRouterLink href="/requestdetail">
+          <IonRouterLink href="/providerdetail">
             <IonList className="service__item">
               <IonImg className="service__img imgAvata " src={iconProfile} />
               <IonList className="service__info">
@@ -82,7 +61,7 @@ const ServiceRequest: React.FC = () => {
               <IonText className="service__price">₦ 300.00</IonText>
             </IonList>
           </IonRouterLink>
-          <IonRouterLink href="/requestdetail">
+          <IonRouterLink href="/providerdetail">
             <IonList className="service__item">
               <IonImg className="service__img imgAvata " src={iconProfile} />
               <IonList className="service__info">
@@ -103,7 +82,7 @@ const ServiceRequest: React.FC = () => {
               <IonText className="service__price">₦ 300.00</IonText>
             </IonList>
           </IonRouterLink>
-          <IonRouterLink href="/requestdetail">
+          <IonRouterLink href="/providerdetail">
             <IonList className="service__item">
               <IonImg className="service__img imgAvata " src={iconProfile} />
               <IonList className="service__info">
@@ -130,4 +109,4 @@ const ServiceRequest: React.FC = () => {
   );
 };
 
-export default ServiceRequest;
+export default ServiceHistory;

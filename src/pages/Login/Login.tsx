@@ -54,7 +54,7 @@ const Login: React.FC = () => {
               className="btn"
               size="large"
               expand="block"
-              routerLink="/home"
+              href="/homecustomer"
             >
               Login
             </IonButton>

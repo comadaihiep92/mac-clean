@@ -13,21 +13,21 @@ import {
   IonButton,
 } from "@ionic/react";
 
-import "./RequestDetail.css";
+import "./ProviderDetail.css";
 import banner2 from "../../image/banner2.jpg";
 import iconStar from "../../image/icon-star.png";
 import iconProfile from "../../image/avata.png";
 import iconAdress from "../../image/icon-address.png";
 import iconBack from "../../image/icon-arrow-back.png";
 
-const RequestDetail: React.FC = () => {
+const ProviderDetail: React.FC = () => {
   return (
     <IonPage className="input menu-animated">
       <IonHeader className="ion-no-border bg">
         <IonToolbar color="blue">
           <IonButtons slot="start">
             <IonRouterLink
-              href="/servicerequest"
+              href="/servicehistory"
               className="shadow"
               auto-hide="false"
             >
@@ -36,7 +36,7 @@ const RequestDetail: React.FC = () => {
           </IonButtons>
 
           <IonTitle className="ion-text-center title-white">
-            Request Detail
+            Provider Detail
           </IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -158,7 +158,7 @@ const RequestDetail: React.FC = () => {
             </IonList>
           </IonList>
           <IonButton size="large" className="btn" expand="block">
-            Accept
+            Schedule
           </IonButton>
         </IonList>
       </IonContent>
@@ -166,4 +166,4 @@ const RequestDetail: React.FC = () => {
   );
 };
 
-export default RequestDetail;
+export default ProviderDetail;

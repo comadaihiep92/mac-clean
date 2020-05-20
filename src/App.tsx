@@ -15,18 +15,19 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 // import { Link } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import HomeCustomer from "./pages/HomeCustomer/HomeCustomer";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 
 import NewService from "./pages/NewService/NewService";
 import Summary from "./pages/Summary/Summary";
-import ServiceRequest from "./pages/ServiceRequest/ServiceRequest";
-import RequestDetail from "./pages/RequestDetail/RequestDetail";
-import Profile from "./pages/Profile/Profile";
+import ServiceHistory from "./pages/ServiceHistory/ServiceHistory";
+import ProviderDetail from "./pages/ProviderDetail/ProviderDetail";
+import ProfileCustomer from "./pages/ProfileCustomer/ProfileCustomer";
 import Earnings from "./pages/Earnings/Earnings";
-import EditPassword from "./pages/EditPassword/EditPassword";
+import EditPasswordCustomer from "./pages/EditPasswordCustomer/EditPasswordCustomer";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import AvailableProviders from "./pages/AvailableProviders/AvailableProviders";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -51,7 +52,8 @@ import "./theme/variables.css";
 import iconAvata from "./image/avata.png";
 import iconArrow from "./image/icon-arrow.png";
 import iconHome from "./image/icon-home.png";
-import iconSummary from "./image/icon-summary.png";
+import iconPayment from "./image/icon-payment.png";
+import iconHelp from "./image/icon-help.png";
 import iconService from "./image/icon-service.png";
 import iconProfile from "./image/icon-profile.png";
 import iconEarning from "./image/icon-earning.png";
@@ -79,34 +81,34 @@ const App: React.FC = () => (
       </IonHeader>
       <IonContent>
         <IonList className="ion-padding-horizontal">
-          <IonRouterLink href="/home">
+          <IonRouterLink href="/homecustomer">
             <IonItem>
               <IonImg className="imgMenu" src={iconHome} />
               <p className="textMenu">Home</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/summary">
-            <IonItem>
-              <IonImg className="imgMenu" src={iconSummary} />
-              <p className="textMenu">Summary</p>
-            </IonItem>
-          </IonRouterLink>
-          <IonRouterLink href="/servicerequest">
+          <IonRouterLink href="/servicehistory">
             <IonItem>
               <IonImg className="imgMenu" src={iconService} />
-              <p className="textMenu">Service Requsets</p>
+              <p className="textMenu">Service History</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/profile">
+          <IonRouterLink href="/profilecustomer">
             <IonItem>
               <IonImg className="imgMenu" src={iconProfile} />
               <p className="textMenu">Profile</p>
             </IonItem>
           </IonRouterLink>
-          <IonRouterLink href="/earnings">
+          <IonRouterLink href="/payment">
             <IonItem>
-              <IonImg className="imgMenu" src={iconEarning} />
-              <p className="textMenu">Earnings</p>
+              <IonImg className="imgMenu" src={iconPayment} />
+              <p className="textMenu">Payment</p>
+            </IonItem>
+          </IonRouterLink>
+          <IonRouterLink href="/help">
+            <IonItem>
+              <IonImg className="imgMenu" src={iconHelp} />
+              <p className="textMenu">Help</p>
             </IonItem>
           </IonRouterLink>
           <IonRouterLink href="/login">
@@ -120,19 +122,28 @@ const App: React.FC = () => (
     </IonMenu>
     <IonRouterOutlet id="content1"></IonRouterOutlet>
     <IonReactRouter>
-      <Route path="/home" component={Home} exact={true} />
+      <Route path="/homecustomer" component={HomeCustomer} exact={true} />
       <Route exact path="/" render={() => <Redirect to="/login" />} />
       <Route path="/login" component={Login} exact={true} />
       <Route path="/signup" component={SignUp} exact={true} />
       {/* <Route path="/menu" component={Menu} exact={true} /> */}
       <Route path="/newservice" component={NewService} exact={true} />
       <Route path="/summary" component={Summary} exact={true} />
-      <Route path="/servicerequest" component={ServiceRequest} exact={true} />
-      <Route path="/requestdetail" component={RequestDetail} exact={true} />
-      <Route path="/profile" component={Profile} exact={true} />
+      <Route path="/servicehistory" component={ServiceHistory} exact={true} />
+      <Route path="/providerdetail" component={ProviderDetail} exact={true} />
+      <Route path="/profilecustomer" component={ProfileCustomer} exact={true} />
       <Route path="/earnings" component={Earnings} exact={true} />
-      <Route path="/editpassword" component={EditPassword} exact={true} />
+      <Route
+        path="/editpasswordcustomer"
+        component={EditPasswordCustomer}
+        exact={true}
+      />
       <Route path="/forgotpassword" component={ForgotPassword} exact={true} />
+      <Route
+        path="/availableproviders"
+        component={AvailableProviders}
+        exact={true}
+      />
 
       {/* <IonSplitPane contentId="main">
         <Menu />
