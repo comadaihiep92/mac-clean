@@ -356,8 +356,8 @@ const CleaningServiceRequest: React.FC = () => {
               How would you like to pay?
             </IonText>
             <IonRadioGroup
-              value={cleaners}
-              onIonChange={(e) => setCleaners(e.detail.value)}
+              value={pay}
+              onIonChange={(e) => setPay(e.detail.value)}
             >
               <IonList className="listRadio">
                 <IonItem

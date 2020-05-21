@@ -14,7 +14,6 @@ import {
   IonRouterLink,
   IonSlides,
   IonSlide,
-  IonItem,
 } from "@ionic/react";
 
 import "./Payment.css";
