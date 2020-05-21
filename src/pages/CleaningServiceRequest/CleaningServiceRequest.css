@@ -8,8 +8,11 @@
 }
 .icon__input-right {
   max-width: 100%;
-  /* width: 20px; */
+  width: 10px;
   margin-left: auto;
+}
+.iconCalendar {
+  width: 20px;
 }
 .listRadio {
   display: flex;

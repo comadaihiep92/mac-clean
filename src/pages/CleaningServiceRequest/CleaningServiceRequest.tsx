@@ -107,7 +107,10 @@ const CleaningServiceRequest: React.FC = () => {
                 onIonChange={(e) => setSelectedDate(e.detail.value!)}
               ></IonDatetime>
 
-              <IonImg className="icon__input-right" src={iconCalendar} />
+              <IonImg
+                className="icon__input-right iconCalendar"
+                src={iconCalendar}
+              />
             </IonItem>
           </IonList>
           <IonList>
