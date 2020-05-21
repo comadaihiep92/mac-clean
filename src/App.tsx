@@ -29,6 +29,8 @@ import EditPasswordCustomer from "./pages/EditPasswordCustomer/EditPasswordCusto
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import AvailableProviders from "./pages/AvailableProviders/AvailableProviders";
 import Help from "./pages/Help/Help";
+import CleaningServiceRequest from "./pages/CleaningServiceRequest/CleaningServiceRequest";
+import Payment from "./pages/Payment/Payment";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -101,7 +103,7 @@ const App: React.FC = () => (
             </IonItem>
           </IonRouterLink>
           {/* <IonRouterLink href="/payment"> */}
-          <IonRouterLink>
+          <IonRouterLink href="/payment">
             <IonItem>
               <IonImg className="imgMenu" src={iconPayment} />
               <p className="textMenu">Payment</p>
@@ -135,6 +137,12 @@ const App: React.FC = () => (
       <Route path="/providerdetail" component={ProviderDetail} exact={true} />
       <Route path="/profilecustomer" component={ProfileCustomer} exact={true} />
       <Route path="/earnings" component={Earnings} exact={true} />
+      <Route path="/payment" component={Payment} exact={true} />
+      <Route
+        path="/cleaningservicerequest"
+        component={CleaningServiceRequest}
+        exact={true}
+      />
       <Route
         path="/editpasswordcustomer"
         component={EditPasswordCustomer}

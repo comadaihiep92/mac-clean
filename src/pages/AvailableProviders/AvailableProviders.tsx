@@ -15,7 +15,7 @@ import {
 } from "@ionic/react";
 
 import "./AvailableProviders.css";
-import iconmenu2 from "../../image/icon-menu-nobg.png";
+import iconBack from "../../image/icon-arrow-back.png";
 import banner2 from "../../image/banner2.jpg";
 import iconStar from "../../image/icon-star.png";
 import iconProfile from "../../image/avata.png";
@@ -26,9 +26,13 @@ const AvailableProviders: React.FC = () => {
       <IonHeader className="ion-no-border bg">
         <IonToolbar color="blue">
           <IonButtons slot="start">
-            <IonMenuButton className="shadow" auto-hide="false">
-              <IonImg src={iconmenu2} />
-            </IonMenuButton>
+            <IonRouterLink
+              href="/cleaningservicerequest"
+              className="shadow"
+              auto-hide="false"
+            >
+              <IonImg className="imgBack" src={iconBack} />
+            </IonRouterLink>
           </IonButtons>
 
           <IonTitle className="ion-text-center title-white">
@@ -40,14 +44,13 @@ const AvailableProviders: React.FC = () => {
         <IonImg src={banner2} />
 
         <IonList className="service__list">
-          <IonRouterLink href="/providerdetail">
+          <IonRouterLink>
+            {/* href="/providerdetail" */}
             <IonList className="service__item">
               <IonImg className="service__img imgAvata " src={iconProfile} />
               <IonList className="service__info">
                 <IonList className="service__info-list">
-                  <IonText className="service__name">Ahmed Ali</IonText>
-                  <IonImg className="service__icon" src={iconStar} />
-                  <IonText className="service__rate">5.0</IonText>
+                  <IonText className="service__name">Mira SK</IonText>
                 </IonList>
                 <IonList>
                   <IonText className="service__date">
@@ -55,41 +58,37 @@ const AvailableProviders: React.FC = () => {
                   </IonText>
                 </IonList>
                 <IonList className="service__request request--completed">
-                  Completed
+                  Available
                 </IonList>
               </IonList>
               <IonText className="service__price">₦ 300.00</IonText>
             </IonList>
           </IonRouterLink>
-          <IonRouterLink href="/providerdetail">
+          <IonRouterLink>
             <IonList className="service__item">
               <IonImg className="service__img imgAvata " src={iconProfile} />
               <IonList className="service__info">
                 <IonList className="service__info-list">
                   <IonText className="service__name">Ahmed Ali</IonText>
-                  <IonImg className="service__icon" src={iconStar} />
-                  <IonText className="service__rate">5.0</IonText>
                 </IonList>
                 <IonList>
                   <IonText className="service__date">
                     Friday, 20-12-2018
                   </IonText>
                 </IonList>
-                <IonList className="service__request request--completed">
-                  Completed
+                <IonList className="service__request request--new">
+                  Unavailable
                 </IonList>
               </IonList>
-              <IonText className="service__price">₦ 300.00</IonText>
+              <IonText className="service__price">₦ 600.00</IonText>
             </IonList>
           </IonRouterLink>
-          <IonRouterLink href="/providerdetail">
+          <IonRouterLink>
             <IonList className="service__item">
               <IonImg className="service__img imgAvata " src={iconProfile} />
               <IonList className="service__info">
                 <IonList className="service__info-list">
-                  <IonText className="service__name">Ahmed Ali</IonText>
-                  <IonImg className="service__icon" src={iconStar} />
-                  <IonText className="service__rate">5.0</IonText>
+                  <IonText className="service__name">Mira SK</IonText>
                 </IonList>
                 <IonList>
                   <IonText className="service__date">
@@ -97,10 +96,48 @@ const AvailableProviders: React.FC = () => {
                   </IonText>
                 </IonList>
                 <IonList className="service__request request--completed">
-                  Completed
+                  Available
                 </IonList>
               </IonList>
-              <IonText className="service__price">₦ 300.00</IonText>
+              <IonText className="service__price">₦ 400.00</IonText>
+            </IonList>
+          </IonRouterLink>
+          <IonRouterLink>
+            <IonList className="service__item">
+              <IonImg className="service__img imgAvata " src={iconProfile} />
+              <IonList className="service__info">
+                <IonList className="service__info-list">
+                  <IonText className="service__name">Aysha MK</IonText>
+                </IonList>
+                <IonList>
+                  <IonText className="service__date">
+                    Friday, 20-12-2018
+                  </IonText>
+                </IonList>
+                <IonList className="service__request request--completed">
+                  Available
+                </IonList>
+              </IonList>
+              <IonText className="service__price">₦ 600.00</IonText>
+            </IonList>
+          </IonRouterLink>
+          <IonRouterLink>
+            <IonList className="service__item">
+              <IonImg className="service__img imgAvata " src={iconProfile} />
+              <IonList className="service__info">
+                <IonList className="service__info-list">
+                  <IonText className="service__name">Mira SK</IonText>
+                </IonList>
+                <IonList>
+                  <IonText className="service__date">
+                    Friday, 20-12-2018
+                  </IonText>
+                </IonList>
+                <IonList className="service__request request--new">
+                  Available
+                </IonList>
+              </IonList>
+              <IonText className="service__price">₦ 700.00</IonText>
             </IonList>
           </IonRouterLink>
         </IonList>

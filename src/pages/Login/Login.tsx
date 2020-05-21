@@ -6,6 +6,7 @@ import {
   IonList,
   IonButton,
 } from "@ionic/react";
+import { useHistory } from "react-router-dom";
 import React, { useState } from "react";
 // import ExploreContainer from "../../components/ExploreContainer";
 import "./Login.css";
@@ -15,10 +16,12 @@ import { Link } from "react-router-dom";
 const Login: React.FC = () => {
   const [user, setText] = useState("");
   const [password, setPassword] = useState("");
+  // let history = useHistory();
 
   function loginUser() {
     if (user === "admin" && password === "admin") {
       console.log("Login susscess: ", user, password);
+      // return history.push("/homecustomer");
     } else {
       console.log("Error email or pass");
     }

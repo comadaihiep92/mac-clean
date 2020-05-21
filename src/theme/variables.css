@@ -30,6 +30,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-button: #1b6ab5;
   --ion-color-label: #a7a7a7;
   --ion-color-input: #606060;
+  --ion-color-link: #5e5e5e;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -264,6 +265,9 @@ http://ionicframework.com/docs/theming/ */
 }
 .ion-color-input {
   --ion-color-base: var(--ion-color-input);
+}
+.ion-color-link {
+  --ion-color-base: var(--ion-color-link);
 }
 
 .imgAvata {

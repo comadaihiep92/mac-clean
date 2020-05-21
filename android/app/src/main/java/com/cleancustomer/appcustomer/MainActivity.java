@@ -1,4 +1,4 @@
-package com.clean.app;
+package com.cleancustomer.appcustomer;
 
 import android.os.Bundle;
 

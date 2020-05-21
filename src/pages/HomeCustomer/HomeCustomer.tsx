@@ -14,6 +14,7 @@ import {
   IonCol,
   IonFab,
   IonFabButton,
+  IonRouterLink,
 } from "@ionic/react";
 
 // import ExploreContainer from "../../components/ExploreContainer";
@@ -45,36 +46,54 @@ const HomeCustomer: React.FC = () => {
       <IonContent>
         <IonImg src={banner} />
         <IonGrid className="wrapper">
-          <IonRow className="listTab">
-            <IonCol className="itemHome">
-              <IonImg className="sizeImg" src={iconoffice} />
-              <p>Office</p>
-            </IonCol>
-            <IonCol className="itemHome">
-              <IonImg className="sizeImg" src={iconindu} />
-              <p>Inductrial</p>
-            </IonCol>
-          </IonRow>
-          <IonRow className="listTab">
-            <IonCol className="itemHome">
-              <IonImg className="sizeImg" src={iconfumi} />
-              <p>Fumigation & pest control</p>
-            </IonCol>
-            <IonCol className="itemHome">
-              <IonImg className="sizeImg" src={iconresi} />
-              <p>Residential</p>
-            </IonCol>
-          </IonRow>
-          <IonRow className="listTab">
-            <IonCol className="itemHome">
-              <IonImg className="sizeImg" src={iconcons} />
-              <p>Construction</p>
-            </IonCol>
-            <IonCol className="itemHome">
-              <IonImg className="sizeImg" src={iconevent} />
-              <p>Event</p>
-            </IonCol>
-          </IonRow>
+          <IonRouterLink color="link" href="/cleaningservicerequest">
+            <IonRow className="listTab">
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconoffice} />
+                <p>Office</p>
+              </IonCol>
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconindu} />
+                <p>Inductrial</p>
+              </IonCol>
+            </IonRow>
+          </IonRouterLink>
+          <IonRouterLink color="link" href="/cleaningservicerequest">
+            <IonRow className="listTab">
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconfumi} />
+                <p>Fumigation & pest control</p>
+              </IonCol>
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconresi} />
+                <p>Residential</p>
+              </IonCol>
+            </IonRow>
+          </IonRouterLink>
+          <IonRouterLink color="link" href="/cleaningservicerequest">
+            <IonRow className="listTab">
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconfumi} />
+                <p>Fumigation & pest control</p>
+              </IonCol>
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconresi} />
+                <p>Residential</p>
+              </IonCol>
+            </IonRow>
+          </IonRouterLink>
+          <IonRouterLink color="link" href="/cleaningservicerequest">
+            <IonRow className="listTab">
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconcons} />
+                <p>Construction</p>
+              </IonCol>
+              <IonCol className="itemHome">
+                <IonImg className="sizeImg" src={iconevent} />
+                <p>Event</p>
+              </IonCol>
+            </IonRow>
+          </IonRouterLink>
         </IonGrid>
       </IonContent>
     </IonPage>

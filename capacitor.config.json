@@ -1,6 +1,6 @@
 {
-  "appId": "com.clean.app",
-  "appName": "clean",
+  "appId": "com.cleancustomer.appcustomer",
+  "appName": "clean customer",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
