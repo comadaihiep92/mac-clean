@@ -70,18 +70,7 @@ const HomeCustomer: React.FC = () => {
               </IonCol>
             </IonRow>
           </IonRouterLink>
-          <IonRouterLink color="link" href="/cleaningservicerequest">
-            <IonRow className="listTab">
-              <IonCol className="itemHome">
-                <IonImg className="sizeImg" src={iconfumi} />
-                <p>Fumigation & pest control</p>
-              </IonCol>
-              <IonCol className="itemHome">
-                <IonImg className="sizeImg" src={iconresi} />
-                <p>Residential</p>
-              </IonCol>
-            </IonRow>
-          </IonRouterLink>
+
           <IonRouterLink color="link" href="/cleaningservicerequest">
             <IonRow className="listTab">
               <IonCol className="itemHome">
