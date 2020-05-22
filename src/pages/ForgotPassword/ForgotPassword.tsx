@@ -56,7 +56,12 @@ const ForgotPassword: React.FC = () => {
                   ></IonInput>
                 </IonItem>
               </IonList>
-              <IonButton className="btn" size="large" expand="block">
+              <IonButton
+                className="btn"
+                href="/otp"
+                size="large"
+                expand="block"
+              >
                 Confirm
               </IonButton>
             </IonList>

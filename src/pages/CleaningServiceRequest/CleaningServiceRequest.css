@@ -133,3 +133,6 @@ select::-ms-expand {
 .noFlat > .select-icon {
   opacity: 0 !important;
 }
+.cleaning__margintop .select-icon .select-icon-inner {
+  display: none;
+}

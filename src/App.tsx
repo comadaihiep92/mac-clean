@@ -31,6 +31,7 @@ import AvailableProviders from "./pages/AvailableProviders/AvailableProviders";
 import Help from "./pages/Help/Help";
 import CleaningServiceRequest from "./pages/CleaningServiceRequest/CleaningServiceRequest";
 import Payment from "./pages/Payment/Payment";
+import OTP from "./pages/OTP/OTP";
 // import Page from "./pages/Page";
 // import Menu from "./components/Menu";
 
@@ -138,6 +139,7 @@ const App: React.FC = () => (
       <Route path="/profilecustomer" component={ProfileCustomer} exact={true} />
       <Route path="/earnings" component={Earnings} exact={true} />
       <Route path="/payment" component={Payment} exact={true} />
+      <Route path="/otp" component={OTP} exact={true} />
       <Route
         path="/cleaningservicerequest"
         component={CleaningServiceRequest}
